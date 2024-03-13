@@ -1,0 +1,389 @@
+/* Universal Selector */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+  }
+  
+  .first {
+    background: url(About\ Us\ Assets/sunset.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+  }
+  
+  .navbar {
+    background: transparent;
+    overflow: hidden;
+    z-index: 1000;
+    transition: background-color 0.3s;
+    width: 100%;
+   
+    top: 0;
+    left: 0;
+  }
+  
+  .fixed {
+    background-color: rgb(149, 57, 0);
+    color: white;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: 600;
+  }
+  
+  .content {
+    display: flex;
+    list-style-type: none;
+  }
+  
+  .content li {
+    margin-right: 20px;
+  }
+  
+  .logo {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .logo:hover {
+    scale: 1.2;
+    transition: ease-in-out 0.5s;
+  
+  }
+  
+  
+  .content {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .content li {
+    margin: 0 15px;
+  }
+  
+  .content li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    z-index: 1;
+    margin: auto;
+  }
+  
+  .content li a:hover {
+    scale: 1.04;
+  }
+  
+  
+  .main {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 60vh;
+  
+  }
+  
+  .headline {
+  
+    font-size: 36px;
+    margin-top: 50px;
+    color: white;
+    z-index: 1;
+  }
+  
+  .slogan {
+    padding: auto;
+    font-size: 30px;
+    color: white;
+    z-index: 1;
+  }
+  
+  
+  @media screen and (max-width: 768px) {
+    .content {
+      display: none;
+    }
+  
+    .burger {
+      display: block;
+    }
+  }
+  
+  /* For the sliding image */
+  .second {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .slider-container {
+    width: 40vw;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .slider img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .text {
+    margin-top: 20px;
+  }
+  
+  .explore-btn {
+    padding: 10px 20px;
+    background-color: #0047AB;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  .explore-btn:hover {
+    background-color: #002d6a;
+  }
+  
+  .section {
+    height: 2vh;
+    width: 100vw;
+    background-color: gray;
+  }
+  
+  main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    background-color: rgb(213, 213, 213);
+    padding: 25px;
+    border-radius: 15px;
+  }
+  
+  .text {
+    width: 40vw;
+    font-size: 26px;
+    padding: 25px;
+    justify-content: space-evenly;
+  
+    margin-top: 20px;
+    text-align: justify;
+  }
+  /* For the card */
+  
+  
+  .containerCard {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .button:hover {
+    background-color: #0056b3;
+  }
+  
+  .historicalPlaces {
+    text-align: center;
+  }
+  
+  .card {
+    display: inline-block;
+    width: 300px;
+    margin: 10px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: scale(1.08);
+  }
+  
+  .cardHeading {
+    margin-top: 0;
+  }
+  
+  .cardImage {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .PlaceInfo {
+    color: #555;
+  }
+  
+  /* Addition for the About Us Page  */
+  .heading_welcome{
+   margin-left: 150px;
+   margin-top: 80px;
+    height:auto;
+  }
+  .heading_welcome h2{
+    margin-left: 30px;
+  }
+  .image_welcome{
+    background:url(About\ Us\ Assets/waterfall.jpg);
+    width: 750px;
+    height:400px;
+    background-size: cover;
+    margin-top: 20px;
+    border-radius: 2rem;
+   border: 5px solid aliceblue;
+  
+  }
+  .image_in_column{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+  }
+  .imageincol{
+    width:150px;
+    height:100px;
+  }
+  .image_in_column1{
+    background-image: url(Assets/Image\ in\ Column/Image1.jpg);
+    background-size: cover;
+    height: fit-content;
+    width:auto;
+    
+  
+  }
+  
+  .description{
+    height:800px;
+    width:auto;
+    margin: 40px 40px;
+  }
+  .description p{
+    margin:10px ;
+    
+  }
+  .description_content{
+    margin: auto;
+    text-align: justify;
+    padding: 20px;
+    background-color: #555;
+    border-radius: 20px;
+    color:azure;
+    
+  
+  }
+  .description_content h2{
+    margin-left: 10px;
+    font-weight: bolder;
+    color:brown;
+    background-color: whitesmoke;
+    width:fit-content;
+    padding: 0.5rem;
+    border-radius: 1rem;
+  }
+  .description_content b{
+    color:yellow
+  }
+  
+  .card_list1{
+    display: flex;
+    margin:20px 20px 20px 20px;
+    justify-content: space-evenly;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #555;
+   
+  }
+  .destination_card{
+   align-self:center;
+    margin-top:20px;
+    height:400px;
+    width:300px;
+    background-color:#555;
+    align-items: center;
+    color:antiquewhite;
+    border-radius: 2rem;
+  }
+  .destination_card h3{
+    margin-left: 20px;
+    padding: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+    
+  }
+  
+  h4{
+    margin-left:20px; 
+  }
+  .image_card{
+    justify-content: center;
+    background-image:url(Assets/Image\ in\ Column/Image1.jpg);
+    background-size:cover;
+    margin-top: 15px;
+    height:200px;
+    width:200px;
+   padding: 5px;
+    
+  }
+  .image_card1{
+    background: url(Assets/Assests\ for\ card/Image1.jpg);
+  }
+  .image_card2{
+    background: url(Assets/Assests\ for\ card/Image2.jpg);
+  }
+  .image_card3{
+    background: url(Assets/Assests\ for\ card/Image3.jpg);
+  }
+  .image_card4{
+    background: url(Assets/Assests\ for\ card/Image4.jpg);
+  }
+  .image_card5{
+    background: url(Assets/Assests\ for\ card/Image5.jpg);
+  }
+  .image_card5{
+    background: url(Assets/Assests\ for\ card/Image6.jpg);
+  }
+  
+  .tour_card h2{
+   text-align:center;
+  }
